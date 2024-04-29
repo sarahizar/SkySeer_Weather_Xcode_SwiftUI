@@ -13,6 +13,12 @@
 		7B3284722BDF450600854DFA /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3284712BDF450600854DFA /* LocationManager.swift */; };
 		7B3284752BDF49B300854DFA /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3284742BDF49B300854DFA /* WelcomeView.swift */; };
 		7B3284772BE0045F00854DFA /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3284762BE0045F00854DFA /* LoadingView.swift */; };
+		7B32847A2BE0206A00854DFA /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3284792BE0206A00854DFA /* WeatherManager.swift */; };
+		7B32847C2BE027AC00854DFA /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B32847B2BE027AC00854DFA /* WeatherView.swift */; };
+		7B32847E2BE0289800854DFA /* WeatherRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B32847D2BE0289800854DFA /* WeatherRow.swift */; };
+		7B3284812BE0299700854DFA /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3284802BE0299700854DFA /* ModelData.swift */; };
+		7B3284832BE02A0500854DFA /* weatherData.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 7B3284822BE02A0500854DFA /* weatherData.geojson */; };
+		7B3284852BE02A7D00854DFA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3284842BE02A7D00854DFA /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,13 @@
 		7B3284712BDF450600854DFA /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		7B3284742BDF49B300854DFA /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		7B3284762BE0045F00854DFA /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		7B3284792BE0206A00854DFA /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
+		7B32847B2BE027AC00854DFA /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
+		7B32847D2BE0289800854DFA /* WeatherRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRow.swift; sourceTree = "<group>"; };
+		7B3284802BE0299700854DFA /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		7B3284822BE02A0500854DFA /* weatherData.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = weatherData.geojson; sourceTree = "<group>"; };
+		7B3284842BE02A7D00854DFA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		7B3284862BE02C3500854DFA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +53,9 @@
 		7B3284372BDF3EB100854DFA = {
 			isa = PBXGroup;
 			children = (
+				7B3284862BE02C3500854DFA /* README.md */,
+				7B3284842BE02A7D00854DFA /* Extensions.swift */,
+				7B32847F2BE028B700854DFA /* Components */,
 				7B3284422BDF3EB100854DFA /* WeatherApp */,
 				7B3284412BDF3EB100854DFA /* Products */,
 			);
@@ -69,6 +85,8 @@
 			isa = PBXGroup;
 			children = (
 				7B32844D2BDF3EB200854DFA /* Preview Assets.xcassets */,
+				7B3284802BE0299700854DFA /* ModelData.swift */,
+				7B3284822BE02A0500854DFA /* weatherData.geojson */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -77,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				7B3284712BDF450600854DFA /* LocationManager.swift */,
+				7B3284792BE0206A00854DFA /* WeatherManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -87,8 +106,17 @@
 				7B3284452BDF3EB100854DFA /* ContentView.swift */,
 				7B3284742BDF49B300854DFA /* WelcomeView.swift */,
 				7B3284762BE0045F00854DFA /* LoadingView.swift */,
+				7B32847B2BE027AC00854DFA /* WeatherView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		7B32847F2BE028B700854DFA /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				7B32847D2BE0289800854DFA /* WeatherRow.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +179,7 @@
 			files = (
 				7B32844E2BDF3EB200854DFA /* Preview Assets.xcassets in Resources */,
 				7B32844A2BDF3EB200854DFA /* Assets.xcassets in Resources */,
+				7B3284832BE02A0500854DFA /* weatherData.geojson in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,7 +191,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B3284752BDF49B300854DFA /* WelcomeView.swift in Sources */,
+				7B3284852BE02A7D00854DFA /* Extensions.swift in Sources */,
 				7B3284722BDF450600854DFA /* LocationManager.swift in Sources */,
+				7B32847E2BE0289800854DFA /* WeatherRow.swift in Sources */,
+				7B32847A2BE0206A00854DFA /* WeatherManager.swift in Sources */,
+				7B32847C2BE027AC00854DFA /* WeatherView.swift in Sources */,
+				7B3284812BE0299700854DFA /* ModelData.swift in Sources */,
 				7B3284462BDF3EB100854DFA /* ContentView.swift in Sources */,
 				7B3284772BE0045F00854DFA /* LoadingView.swift in Sources */,
 			);
@@ -314,7 +348,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				NEW_SETTING = "";
-				"NEW_SETTING[arch=*]" = "$(ARCHS_STANDARD_32_BIT)";
+				"NEW_SETTING[arch=*]" = "(ARCHS_STANDARD_32_BIT)";
 				PRODUCT_BUNDLE_IDENTIFIER = XenoVision.WeatherApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -354,7 +388,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				NEW_SETTING = "";
-				"NEW_SETTING[sdk=iphonesimulator*]" = "$(ARCHS_STANDARD_32_BIT)";
+				"NEW_SETTING[sdk=iphonesimulator*]" = "(ARCHS_STANDARD_32_BIT)";
 				PRODUCT_BUNDLE_IDENTIFIER = XenoVision.WeatherApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;

@@ -2,7 +2,6 @@
 //  LoadingView.swift
 //  WeatherApp
 //
-//  Created by Sara McCauley on 4/29/24.
 //
 
 import SwiftUI

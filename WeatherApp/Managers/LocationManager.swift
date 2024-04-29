@@ -2,7 +2,6 @@
 //  LocationManager.swift
 //  WeatherApp
 //
-//  Created by Sara McCauley on 4/28/24.
 //
 
 import Foundation
