@@ -12,6 +12,7 @@
 - Installation
 - Usage
 - Notes
+- Link
 
 ## Technology Used
 
@@ -43,4 +44,6 @@
 1. OpenWeather API: WeatherApp uses the OpenWeather API to fetch weather data. To use the app, you'll need to sign up for an OpenWeather API key and replace the placeholder API key in the code with your own. Instructions for obtaining an API key can be found on the OpenWeather website.
 2. This project is intended for educational purposes and as a starting point for building weather-related applications. Feel free to customize and extend the app's functionality according to your needs
 
+## Link
 
+https://github.com/sarahizar/SkySeer_Weather_Xcode_SwiftUI
